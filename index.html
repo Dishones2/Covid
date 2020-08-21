@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,10 +23,10 @@
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li><a href="#">Описание</a></li>
-                        <li><a href="#">Заражение</a></li>
-                        <li><a href="#">Симптомы</a></li>
-                        <li><a href="#">Профилактика</a></li>
+                        <li><a href="#info">Описание</a></li>
+                        <li><a href="#contagion">Пути заражения</a></li>
+                        <li><a href="#symptoms">Симптомы</a></li>
+                        <li><a href="#prevention">Профилактика</a></li>
                     </ul>
                     <button class="menu__btn" type="button">Связаться с нами</button>
                 </nav>
@@ -35,7 +37,7 @@
         <div class="container">
             <div class="top__inner">
                 <div class="top__content">
-                    <div class="top__content-title title">
+                    <div class="top__content-title">
                         <span>Предостережение о COVID-19</span>
                         <h1>Оставайтесь на домашнем карантине чтобы предотвратить распространение вируса</h1>
                     </div>
@@ -51,22 +53,225 @@
             </div>
         </div>
     </section>
-    <section class="info">
+    <section class="info" id="info">
         <div class="container">
             <div class="info__inner">
                 <div class="info__images">
                     <img src="images/info.png" alt="">
                 </div>
                 <div class="info__content">
-                    <div class="info__content-title top__content-title title">
+                    <div class="info__content-title top__content-title">
                         <span>Что такое Covid-19</span>
                         <h1>Коронавирус</h1>
                     </div>
                     <p class="info__content-text top__content-text">
-                        Коронавирус - это разновидность вируса. Есть много разных видов, и некоторые из них вызывают болезни. Недавно идентифицированный тип вызвал недавнюю вспышку респираторного заболевания, которое теперь называется COVID-19.
+                        Коронавирус - это разновидность вируса. Есть много разных видов, и некоторые из них вызывают
+                        болезни. Недавно идентифицированный тип вызвал недавнюю вспышку респираторного заболевания,
+                        которое теперь называется COVID-19.
                     </p>
                     <a class="info__content-btn top__content-btn" href="#">Узнать больше</a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="contagion" id="contagion">
+        <div class="container">
+            <div class="contagion__title title">
+                <span>Covid-19</span>
+                <h2>Пути заражения</h2>
+                <p>Коронавирус - это разновидность вируса. Есть много разных видов, и некоторые из них вызывают болезни.
+                </p>
+            </div>
+            <div class="contagion__inner">
+                <div class="contagion__item">
+                    <div class="contagion__item-images">
+                        <img src="images/contagion-img-1.png" alt="">
+                    </div>
+                    <div class="contagion__item-title">
+                        Через воздух
+                    </div>
+                    <p class="contagion__item-text">
+                        Воздерживайтесь от посещения людных мест. Если есть возможность, лучше оставайтесь дома.
+                    </p>
+                </div>
+                <div class="contagion__item">
+                    <div class="contagion__item-images">
+                        <img src="images/contagion-img-2.png" alt="">
+                    </div>
+                    <div class="contagion__item-title">
+                        Телесный контакт
+                    </div>
+                    <p class="contagion__item-text">
+                        Мытье рук - один из самых простых способов защититься от проникновения вируса.
+                    </p>
+                </div>
+                <div class="contagion__item">
+                    <div class="contagion__item-images">
+                        <img src="images/contagion-img-3.png" alt="">
+                    </div>
+                    <div class="contagion__item-title">
+                        Грязные объекты
+                    </div>
+                    <p class="contagion__item-text">
+                        Используйте салфетку во время чихания. Таким образом вы предотвратите распространение опасных
+                        бактерий.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="symptoms" id="symptoms" style="background-image: url(images/synptoms-bg.png);">
+        <div class="container">
+            <div class="contagion__title title">
+                <span>Covid-19</span>
+                <h2>Симптомы</h2>
+                <p>Как и у любого вируса, у коронавируса есть симптомы, которые могут указать на то ,что человек
+                    заразился.</p>
+            </div>
+            <div class="symptoms__wrapper">
+                <div class="symptoms__inner symptoms__inner-left">
+                    <div class="symptoms__item">
+                        <div class="symptoms__item-images">
+                            <img src="images/bg-circle-right.png" alt="">
+                        </div>
+                        <div class="symptoms__item-text">
+                            Повышенная температура
+                        </div>
+                    </div>
+                    <div class="symptoms__item">
+                        <div class="symptoms__item-images symptoms__item-images--left">
+                            <img src="images/bg-circle-left.png" alt="">
+                        </div>
+                        <div class="symptoms__item-text">
+                            Боль в горле
+                        </div>
+                    </div>
+                    <div class="symptoms__item">
+                        <div class="symptoms__item-images">
+                            <img src="images/bg-circle-right.png" alt="">
+                        </div>
+                        <div class="symptoms__item-text">
+                            Одышка
+                        </div>
+                    </div>
+                </div>
+                <div class="symptoms__inner symptoms__inner-right">
+                    <div class="symptoms__item">
+                        <div class="symptoms__item-images symptoms__item-images--left">
+                            <img src="images/bg-circle-left.png" alt="">
+                        </div>
+                        <div class="symptoms__item-text">
+                            Головная боль
+                        </div>
+                    </div>
+                    <div class="symptoms__item">
+                        <div class="symptoms__item-images">
+                            <img src="images/bg-circle-right.png" alt="">
+                        </div>
+                        <div class="symptoms__item-text">
+                            Потёки из носа
+                        </div>
+                    </div>
+                    <div class="symptoms__item">
+                        <div class="symptoms__item-images symptoms__item-images--left">
+                            <img src="images/bg-circle-left.png" alt="">
+                        </div>
+                        <div class="symptoms__item-text">
+                            Озноб
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prevention" id="prevention">
+        <div class="container">
+            <div class="contagion__title title">
+                <span>Covid-19</span>
+                <h2>Профилактика</h2>
+                <p>
+                    Существуе ряд мер, которые позволяют снзить риск заразиться вирусом. При их соблюдении шанс заболеть
+                    гораздо ниже!
+                </p>
+            </div>
+            <div class="prevention__inner">
+                <div class="prevention__slider">
+                    <div class="prevention__inner">
+                        <div class="prevention__item">
+                            <div class="prevention__item-content">
+                                <div class="prevention__item-title">
+                                    <span>01</span>Носите маску
+                                </div>
+                                <p class="prevention__item-text">
+                                    Ношение медицинской маски может защитить от заражения вирусом, а также обеспечить
+                                    защиту
+                                    окружающих в случае наличия у человека респираторных симптомов.
+                                </p>
+                            </div>
+                            <img class="prevention__item-images" src="images/mask.png" alt="">
+                        </div>
+                    </div>
+                    <div class="prevention__inner">
+                        <div class="prevention__item">
+                            <img class="prevention__item-images" src="images/hands.png" alt="">
+                            <div class="prevention__item-content">
+                                <div class="prevention__item-title">
+                                    <span>02</span>Мойте руки
+                                </div>
+                                <p class="prevention__item-text">
+                                    Ношение медицинской маски может защитить от заражения вирусом, а также обеспечить
+                                    защиту
+                                    окружающих в случае наличия у человека респираторных симптомов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prevention__inner">
+                        <div class="prevention__item">
+                            <div class="prevention__item-content">
+                                <div class="prevention__item-title">
+                                    <span>03</span>Используйте носовой платок
+                                </div>
+                                <p class="prevention__item-text">
+                                    Ношение медицинской маски может защитить от заражения вирусом, а также обеспечить
+                                    защиту
+                                    окружающих в случае наличия у человека респираторных симптомов.
+                                </p>
+                            </div>
+                            <img class="prevention__item-images" src="images/nose.png" alt="">
+                        </div>
+                    </div>
+                    <div class="prevention__inner">
+                        <div class="prevention__item">
+                            <img class="prevention__item-images" src="images/contact.png" alt="">
+                            <div class="prevention__item-content">
+                                <div class="prevention__item-title">
+                                    <span>04</span>Избегайте телесного контакта
+                                </div>
+                                <p class="prevention__item-text">
+                                    Ношение медицинской маски может защитить от заражения вирусом, а также обеспечить
+                                    защиту
+                                    окружающих в случае наличия у человека респираторных симптомов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container">
+            <div class="contagion__title title">
+                <h2>Остались вопросы?
+                    Позвольте Вам помочь!
+                </h2>
+            </div>
+            <div class="questions__form">
+                <form>
+                    <input type="text" placeholder="snmonydemo@gmail.com" required>
+                    <button class="questions__form-btn" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
     </section>
@@ -74,8 +279,9 @@
 
 
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
